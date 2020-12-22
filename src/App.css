@@ -27,10 +27,30 @@ h1 {
 }
 
 .cardSequence {
-  display: grid;
-  grid-gap: 2rem;
-  grid-template-columns: repeat(auto-fill, minmax(320px,1fr));
+  display: flex;
+  flex-direction: row;
   padding: 1.5rem;
+  justify-content: stretch;
+}
+
+.cardColumn {
+  display: flex;
+  flex-direction: column;
+  margin: 0 16px;
+  flex-grow: 1;
+  flex-shrink: 1;
+  max-width: 100%;
+}
+
+.cardColumn:first-child {
+  margin-left: 0;
+}
+.cardColumn:last-child {
+  margin-right: 0;
+}
+
+.card:first-child {
+  margin-top: 0;
 }
 
 .card {
@@ -40,6 +60,7 @@ h1 {
   display: flex;
   flex-direction: column;
   padding: 8px;
+  margin: 16px 0;
 }
 
 .pokemonTypes {
