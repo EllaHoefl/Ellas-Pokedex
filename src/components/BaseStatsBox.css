@@ -1,0 +1,57 @@
+/* Chart Styling for Base Stats of Pokemon */
+.cardPokemonBaseStatsChartBox {
+  display: flex;
+  flex-direction: row;
+}
+
+.cardPokemonBaseStatsChartStats {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-right: 4px;
+}
+
+.cardPokemonBaseStatsChartsStatsNames {
+  margin: 2px 0;
+}
+
+.cardPokemonBaseStatsChartGrid {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-grow: 1;
+}
+
+.cardPokemonBaseStatsBar {
+  background-color: #aaa;
+  border-radius: 3px;
+  align-self: flex-start;
+  margin: 2px 0;
+  position: relative;
+  color: white;
+  padding: 0 4px;
+}
+
+.barAttack {
+  background-color: #f3ac7b;
+}
+
+.barDefense {
+  background-color: #eaca60;
+}
+
+.barSpecialAttack {
+  background-color: #9fb7f3;
+}
+
+.barSpecialDefense {
+  background-color: #a8da90;
+}
+
+.barHealthpoints {
+  background-color: #fb5c5d;
+}
+
+.barSpeed {
+  background-color: #a293ba;
+}

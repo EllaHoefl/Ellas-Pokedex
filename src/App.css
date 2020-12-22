@@ -1,38 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
 .App {
-  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  text-align: left;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.pokedexHeader {
+  background-color: #9595d0;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-size: 1rem;
+  color: white;
+  padding: 1.5rem;
+}
+
+h1 {
+  font-size: 2rem;
+  color: black;
+  padding: 1rem 1.5rem 0 1.5rem;
+}
+
+.filterSequence{
+  padding: 1.5rem;
+}
+
+.cardSequence {
+  display: grid;
+  grid-gap: 2rem;
+  grid-template-columns: repeat(auto-fill, minmax(320px,1fr));
+  padding: 1.5rem;
+}
+
+.card {
+  overflow: hidden;
+  box-shadow: #aaa 2px 2px 2px 2px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  padding: 8px;
+}
+
+.pokemonTypes {
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-left: -8px;
+  cursor: pointer;
+}
+
+.pokemonTypes .button {
+  border-radius: 4px;
+  padding: 6px 8px;
+  margin: 8px 8px;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.pokemonTypes .active {
+  box-shadow: #333 0 0 2px 2px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.cardHeader h2 {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 0;
+  text-transform: capitalize;
+  color: white;
+}
+
+.cardImage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 120px;
+  flex-basis: 120px;
+}
+
+.cardText {
+  background-color: white;
+  padding: 0.5rem 1rem 1rem 1rem;
+  margin-top: 0;
+  line-height: 1.5rem;
+  font-size: 0.9rem;
+  border-radius: 8px;
+}
+
+.cardText > ul {
+  list-style-type: none;
+  padding-inline-start: 12px;
+  padding-inline-end: 12px;
+}
+
+.cardText li {
+  margin: 4px 0;
+}
+
+.cardPokemonTypes {
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.cardPokemonTypes .button {
+  border-radius: 4px;
+  padding: 0 6px;
+  margin: 0 4px;
+  color: white;
+}
+
+.cardpokemonabilitiesBox {
+  display: flex;
+  flex-direction: row;
+  justify-content: stretch;
+}
+
+.cardPokemonAbilites {
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.cardPokemonAbilitesHeadline {
+  margin-top: 4px;
+}
+
+.cardpokemonabilitiesButton {
+  border-radius: 4px;
+  padding: 0 6px;
+  margin: 0 4px;
+  color: white;
+  background-color: #aaa;
+  margin-top: 4px;
+}
+
+.evolutionBox {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding-top: 24px;
+  color: white;
+}
+
+.evolutionLevelBox {
+  text-align: center;
+  padding-right: 18px;
+  padding-left: 18px;
+}
+
+.evolutionArrow {
+  font-size: 2rem;
+}
+
+.evolutionPokemonBox {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.evolutionId {
+  text-transform: capitalize;
 }

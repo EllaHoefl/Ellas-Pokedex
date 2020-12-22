@@ -1,0 +1,50 @@
+
+/* CSS for the different pokemon types */
+.typeElectric {
+  background-color: #ffdb66;
+}
+.typeFire {
+  background-color: #ff6666;
+}
+.typeWater {
+  background-color: #66b5ff;
+}
+.typeGrass {
+  background-color: #a2dd88;
+}
+.typeGhost {
+  background-color: #9595d0;
+}
+.typePoison {
+  background-color: #cd98c2;
+}
+.typeNormal {
+  background-color: #bbbbaa;
+}
+.typeFighting {
+  background-color: #d7998e;
+}
+.typeRock {
+  background-color: #d0c595;
+}
+.typePsychic {
+  background-color: #ff66a6;
+}
+.typeGround {
+  background-color: #e7cd7e;
+}
+.typeIce {
+  background-color: #66d9ff;
+}
+.typeBug {
+  background-color: #b7c81e;
+}
+.typeDragon {
+  background-color: #8575f0;
+}
+.typeFairy {
+  background-color: #ffacff;
+}
+.typeFlying {
+  background-color: #669aff;
+}
