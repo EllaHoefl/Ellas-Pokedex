@@ -2,14 +2,14 @@ import React from 'react';
 import { PokemonData, pokemonList } from '../helpers';
 import { evolutionData } from '../evolutionData';
 
-export interface PokemonCardProps {
+export interface PokemonEvolutionsProps {
 	pokemon: PokemonData;
 }
 
-export const PokemonEvolutions = (props: PokemonCardProps) => {
+export const PokemonEvolutions = (props: PokemonEvolutionsProps) => {
 	const pokemon = props.pokemon;
 	const pokemonId = pokemon.id;
-	const pokemonEvolutionData = evolutionData[pokemon.id];
+	const pokemonEvolutionData = evolutionData[pokemonId];
 
 	if (!pokemonEvolutionData || !pokemonEvolutionData.to) {
 		return null;
@@ -29,12 +29,12 @@ export const PokemonEvolutions = (props: PokemonCardProps) => {
 			return <div className="evolutionBox">
 					<div className="evolutionPokemonBox">
 						<div className="evolutionId">
-							<b>#{pokemonId} {pokemonList[pokemonId - 1].name}</b>
+							<b>#{pokemonId} {pokemon.name}</b>
 						</div>
 						<div className="evolutionImage">
 							<img 
-								src={pokemonList[pokemonId - 1].image} 
-								alt={pokemonList[pokemonId - 1].name} />
+								src={pokemon.image} 
+								alt={pokemon.name} />
 						</div>
 					</div>
 					<div className="evolutionLevelBox">
